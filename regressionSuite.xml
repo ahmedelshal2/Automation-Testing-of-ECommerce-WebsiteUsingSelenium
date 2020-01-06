@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="nopcommerce Regression Suite">
+	<parameter name="browser" value="firefox"></parameter>
+	<test name="Regression Test">
+		<classes>
+			<class name="tests.SearchProductTest" />
+		</classes>
+	</test>
+</suite> 
