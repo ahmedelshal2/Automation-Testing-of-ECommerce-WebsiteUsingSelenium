@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-nopcommerce_Regression_Suite">
-                    <span>C:\Users\hp\Downloads\testautomationn\taf\testng.xml</span>
+                    <span>C:\Users\hp\Downloads\RepositoryProject\testautomationn\taf\regressionSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +102,7 @@
                     <div class="method-list-content passed suite-nopcommerce_Regression_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Regression_Suite" title="tests.AddProductToShoppingCartTest" hash-for-method="UserCanAddProductToShoppingCart">UserCanAddProductToShoppingCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Regression_Suite" title="tests.AddProductToShoppingCartTest" hash-for-method="UserCanRemoveProductFromCart">UserCanRemoveProductFromCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Regression_Suite" title="tests.AddProductToShoppingCartTest" hash-for-method="UserCanSearchWithAutoSuggest">UserCanSearchWithAutoSuggest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Regression_Suite" title="tests.AddProductToShoppingCartTest" hash-for-method="addQunatity">addQunatity</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-nopcommerce_Regression_Suite" title="tests.SearchProductTest" hash-for-method="UserCanSearchForProducts">UserCanSearchForProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-nopcommerce_Regression_Suite -->
@@ -135,35 +120,14 @@
           <div class="suite-nopcommerce_Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.AddProductToShoppingCartTest</span>
+              <span class="class-name">tests.SearchProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="UserCanAddProductToShoppingCart">
-                  </a> <!-- UserCanAddProductToShoppingCart -->
-                  <span class="method-name">UserCanAddProductToShoppingCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="UserCanRemoveProductFromCart">
-                  </a> <!-- UserCanRemoveProductFromCart -->
-                  <span class="method-name">UserCanRemoveProductFromCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="UserCanSearchWithAutoSuggest">
-                  </a> <!-- UserCanSearchWithAutoSuggest -->
-                  <span class="method-name">UserCanSearchWithAutoSuggest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addQunatity">
-                  </a> <!-- addQunatity -->
-                  <span class="method-name">addQunatity</span>
+                  <a name="UserCanSearchForProducts">
+                  </a> <!-- UserCanSearchForProducts -->
+                  <span class="method-name">UserCanSearchForProducts</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,7 +135,7 @@
         </div> <!-- panel nopcommerce_Regression_Suite -->
         <div panel-name="test-xml-nopcommerce_Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hp\Downloads\testautomationn\taf\testng.xml</span>
+            <span class="header-content">C:\Users\hp\Downloads\RepositoryProject\testautomationn\taf\regressionSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -181,7 +145,7 @@
   &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Regression Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.AddProductToShoppingCartTest&quot;/&gt;
+      &lt;class name=&quot;tests.SearchProductTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression Test --&gt;
 &lt;/suite&gt; &lt;!-- nopcommerce Regression Suite --&gt;
@@ -221,28 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'UserCanSearchWithAutoSuggest')
-data.setCell(0, 2, 'tests.AddProductToShoppingCartTest')
-data.setCell(0, 3, 5390);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'UserCanAddProductToShoppingCart')
-data.setCell(1, 2, 'tests.AddProductToShoppingCartTest')
-data.setCell(1, 3, 3640);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addQunatity')
-data.setCell(2, 2, 'tests.AddProductToShoppingCartTest')
-data.setCell(2, 3, 1844);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'UserCanRemoveProductFromCart')
-data.setCell(3, 2, 'tests.AddProductToShoppingCartTest')
-data.setCell(3, 3, 1750);
+data.setCell(0, 1, 'UserCanSearchForProducts')
+data.setCell(0, 2, 'tests.SearchProductTest')
+data.setCell(0, 3, 3995);
 window.suiteTableData['nopcommerce_Regression_Suite']= { tableData: data, tableDiv: 'times-div-nopcommerce_Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-nopcommerce_Regression_Suite">
               </div> <!-- times-div-nopcommerce_Regression_Suite -->
             </div> <!-- times-div -->
@@ -268,46 +220,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.AddProductToShoppingCartTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.SearchProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startDriver(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">11539 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">UserCanSearchWithAutoSuggest</span>
-                <span class="method-start">12203 ms</span>
+                <span class="method-name">UserCanSearchForProducts</span>
+                <span class="method-start">11969 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenshotOnFailure([TestResult name=UserCanSearchWithAutoSuggest status=SUCCESS method=AddProductToShoppingCartTest.Use...)</span>
-                <span class="method-start">17593 ms</span>
+                <span class="method-name">screenshotOnFailure([TestResult name=UserCanSearchForProducts status=SUCCESS method=SearchProductTest.UserCanSearchForPr...)</span>
+                <span class="method-start">15965 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">UserCanAddProductToShoppingCart</span>
-                <span class="method-start">17593 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">screenshotOnFailure([TestResult name=UserCanAddProductToShoppingCart status=SUCCESS method=AddProductToShoppingCartTest....)</span>
-                <span class="method-start">21233 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">addQunatity</span>
-                <span class="method-start">21233 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">screenshotOnFailure([TestResult name=addQunatity status=SUCCESS method=AddProductToShoppingCartTest.addQunatity()[pri:3,...)</span>
-                <span class="method-start">23077 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">UserCanRemoveProductFromCart</span>
-                <span class="method-start">23077 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">screenshotOnFailure([TestResult name=UserCanRemoveProductFromCart status=SUCCESS method=AddProductToShoppingCartTest.Use...)</span>
-                <span class="method-start">24827 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">15971 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">stopDriver</span>
-                <span class="method-start">24874 ms</span>
+                <span class="method-start">16068 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
