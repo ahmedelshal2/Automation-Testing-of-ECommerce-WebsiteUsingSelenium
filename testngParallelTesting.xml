@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="nopcommerce Regression Suite" parallel="tests" thread-count="5">
+	
+	<test name="Chrome Regression Test">
+	<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="tests.SearchProductPT" />
+		</classes>
+	</test>
+	<test name="Firefox Regression Test">
+	<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="tests.SearchProductPT" />
+		</classes>
+	</test>
+</suite> 
