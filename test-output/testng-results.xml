@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47790" started-at="2020-01-04T15:50:46Z" finished-at="2020-01-04T15:51:34Z">
+  <suite name="nopcommerce Regression Suite" duration-ms="44144" started-at="2020-01-10T17:42:52Z" finished-at="2020-01-10T17:43:36Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@5cb9f472]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="47790" started-at="2020-01-04T15:50:46Z" finished-at="2020-01-04T15:51:34Z">
-      <class name="runner.TestRunner">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@5cb9f472]" name="startDriver" is-config="true" duration-ms="11681" started-at="2020-01-04T15:50:34Z" finished-at="2020-01-04T15:50:46Z">
+    <test name="Chrome Regression Test" duration-ms="20364" started-at="2020-01-10T17:42:52Z" finished-at="2020-01-10T17:43:12Z">
+      <class name="tests.SearchProductPT">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="setUp" is-config="true" duration-ms="11730" started-at="2020-01-10T17:42:52Z" finished-at="2020-01-10T17:43:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserCanSearchForProducts()[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="UserCanSearchForProducts" duration-ms="8069" started-at="2020-01-10T17:43:04Z" finished-at="2020-01-10T17:43:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSearchForProducts -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="screenshotOnFailure" is-config="true" duration-ms="2" started-at="2020-01-10T17:43:12Z" finished-at="2020-01-10T17:43:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanSearchForProducts status=SUCCESS method=SearchProductPT.UserCanSearchForProducts()[pri:0, instance:tests.SearchProductPT@e25b2fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="stopDriver" is-config="true" duration-ms="518" started-at="2020-01-10T17:43:12Z" finished-at="2020-01-10T17:43:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDriver -->
+      </class> <!-- tests.SearchProductPT -->
+    </test> <!-- Chrome Regression Test -->
+    <test name="Firefox Regression Test" duration-ms="44144" started-at="2020-01-10T17:42:52Z" finished-at="2020-01-10T17:43:36Z">
+      <class name="tests.AddProductToShoppingCartTestPT">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="setUp" is-config="true" duration-ms="18099" started-at="2020-01-10T17:42:52Z" finished-at="2020-01-10T17:43:10Z">
           <params>
             <param index="0">
               <value>
@@ -20,64 +51,72 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@5cb9f472]" name="setUpClass" is-config="true" duration-ms="407" started-at="2020-01-04T15:50:46Z" finished-at="2020-01-04T15:50:46Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserCanSearchWithAutoSuggest()[pri:1, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="UserCanSearchWithAutoSuggest" duration-ms="8942" started-at="2020-01-10T17:43:10Z" finished-at="2020-01-10T17:43:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@5cb9f472]" name="feature" duration-ms="38917" started-at="2020-01-04T15:50:47Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-01-04T15:51:25Z">
+        </test-method> <!-- UserCanSearchWithAutoSuggest -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2020-01-10T17:43:19Z" finished-at="2020-01-10T17:43:19Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Automated End2End Tests]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@5cb9f472]" name="feature" duration-ms="8155" started-at="2020-01-04T15:51:25Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-01-04T15:51:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[User Registeration]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@5cb9f472]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-04T15:51:25Z" finished-at="2020-01-04T15:51:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=feature status=SUCCESS method=AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@5cb9f472] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanSearchWithAutoSuggest status=SUCCESS method=AddProductToShoppingCartTestPT.UserCanSearchWithAutoSuggest()[pri:1, instance:tests.AddProductToShoppingCartTestPT@59494225] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@5cb9f472]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-04T15:51:34Z" finished-at="2020-01-04T15:51:34Z">
+        <test-method status="PASS" signature="UserCanAddProductToShoppingCart()[pri:2, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="UserCanAddProductToShoppingCart" duration-ms="4736" started-at="2020-01-10T17:43:19Z" finished-at="2020-01-10T17:43:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanAddProductToShoppingCart -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="3" started-at="2020-01-10T17:43:24Z" finished-at="2020-01-10T17:43:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=feature status=SUCCESS method=AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@5cb9f472] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanAddProductToShoppingCart status=SUCCESS method=AddProductToShoppingCartTestPT.UserCanAddProductToShoppingCart()[pri:2, instance:tests.AddProductToShoppingCartTestPT@59494225] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@5cb9f472]" name="tearDownClass" is-config="true" duration-ms="147" started-at="2020-01-04T15:51:34Z" finished-at="2020-01-04T15:51:34Z">
+        <test-method status="PASS" signature="addQunatity()[pri:3, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="addQunatity" duration-ms="6997" started-at="2020-01-10T17:43:24Z" finished-at="2020-01-10T17:43:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:runner.TestRunner@5cb9f472]" name="stopDriver" is-config="true" duration-ms="0" started-at="2020-01-04T15:51:34Z" finished-at="2020-01-04T15:51:34Z">
+        </test-method> <!-- addQunatity -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-10T17:43:31Z" finished-at="2020-01-10T17:43:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addQunatity status=SUCCESS method=AddProductToShoppingCartTestPT.addQunatity()[pri:3, instance:tests.AddProductToShoppingCartTestPT@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="UserCanRemoveProductFromCart()[pri:4, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="UserCanRemoveProductFromCart" duration-ms="4827" started-at="2020-01-10T17:43:31Z" finished-at="2020-01-10T17:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanRemoveProductFromCart -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="5" started-at="2020-01-10T17:43:36Z" finished-at="2020-01-10T17:43:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanRemoveProductFromCart status=SUCCESS method=AddProductToShoppingCartTestPT.UserCanRemoveProductFromCart()[pri:4, instance:tests.AddProductToShoppingCartTestPT@59494225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="stopDriver" is-config="true" duration-ms="509" started-at="2020-01-10T17:43:36Z" finished-at="2020-01-10T17:43:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- runner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.AddProductToShoppingCartTestPT -->
+    </test> <!-- Firefox Regression Test -->
+  </suite> <!-- nopcommerce Regression Suite -->
 </testng-results>

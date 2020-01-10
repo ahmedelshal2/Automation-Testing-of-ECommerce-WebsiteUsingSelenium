@@ -3,14 +3,17 @@
 	
 	<test name="Chrome Regression Test">
 	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="platformName" value="macOS 10.13"></parameter>
 		<classes>
 			<class name="tests.SearchProductPT" />
 		</classes>
 	</test>
 	<test name="Firefox Regression Test">
 	<parameter name="browser" value="firefox"></parameter>
+		<parameter name="platformName" value="Windows 10"></parameter>
+	
 		<classes>
-			<class name="tests.SearchProductPT" />
+			<class name="tests.AddProductToShoppingCartTestPT" />
 		</classes>
 	</test>
 </suite> 

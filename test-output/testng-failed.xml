@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [nopcommerce Regression Suite]" parallel="tests">
+  <test thread-count="5" name="Chrome Regression Test(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="runner.TestRunner">
+      <class name="tests.SearchProductPT">
         <methods>
-          <include name="startDriver"/>
-          <include name="setUpClass"/>
-          <include name="stopDriver"/>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="UserCanSearchForProducts"/>
           <include name="screenshotOnFailure"/>
-          <include name="tearDownClass"/>
+          <include name="stopDriver"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- runner.TestRunner -->
+      </class> <!-- tests.SearchProductPT -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Chrome Regression Test(failed) -->
+  <test thread-count="5" name="Firefox Regression Test(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.SearchProductPT">
+        <methods>
+          <include name="UserCanSearchForProducts"/>
+          <include name="screenshotOnFailure"/>
+          <include name="stopDriver"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests.SearchProductPT -->
+    </classes>
+  </test> <!-- Firefox Regression Test(failed) -->
+</suite> <!-- Failed suite [nopcommerce Regression Suite] -->

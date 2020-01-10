@@ -17,7 +17,16 @@ import utilities.Helper;
 
 public class TestBase2 {
 
+	//Sauce Lab Configuration
+	/*public static final String USERNAME=LoadProperties.saucelabsData.getProperty("username");
+	public static final String ACCESS_KEY=LoadProperties.saucelabsData.getProperty("accesskey");
+	public static final String sauceURL="https://"+USERNAME+":"+ACCESS_KEY
+			+LoadProperties.saucelabsData.getProperty("seleniumURL");*/
+
+
 	public static String BaseURL="https://demo.nopcommerce.com";
+	public static String sauceURL1="https://ahelshal2020:1fa5fca6-4f38-4241-9f21-1ab8e96314ae@ondemand.saucelabs.com:443/wd/hub";
+
 	protected ThreadLocal<RemoteWebDriver> driver=null;
 
 	@BeforeClass
@@ -28,7 +37,12 @@ public class TestBase2 {
 		driver=new ThreadLocal<>();
 		DesiredCapabilities caps =new DesiredCapabilities();
 		caps.setCapability("browserName", browser);
-		driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
+		//Selenium Grid Local
+	//	driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
+		
+		//Run on SauceLabs on cloud
+		driver.set(new RemoteWebDriver(new URL(sauceURL1), caps));
+		
 		getDriver().navigate().to(BaseURL);
 	}
 
@@ -43,18 +57,18 @@ public class TestBase2 {
 		getDriver().quit();
 		driver.remove();
 	}
-	
+
 	//take screenshot when test case fail and add it in the screenshot folder
-		@AfterMethod
-		public void screenshotOnFailure(ITestResult result)
+	@AfterMethod
+	public void screenshotOnFailure(ITestResult result)
+	{
+		if (result.getStatus()==ITestResult.FAILURE) 
 		{
-			if (result.getStatus()==ITestResult.FAILURE) 
-			{
-				System.out.println("failed");
-				System.out.println("taking screenshot");
-				Helper.captureScreenshot(getDriver(), result.getName());
-			}
+			System.out.println("failed");
+			System.out.println("taking screenshot");
+			Helper.captureScreenshot(getDriver(), result.getName());
 		}
+	}
 
 
 }
