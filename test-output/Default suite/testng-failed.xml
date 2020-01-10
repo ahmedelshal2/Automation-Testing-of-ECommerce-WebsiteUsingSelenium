@@ -3,16 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runner.TestRunner">
+      <class name="tests.UserRegisterationTestWithJavaFaker">
         <methods>
           <include name="startDriver"/>
           <include name="setUpClass"/>
+          <include name="UserCanRegisterSuccessfully"/>
           <include name="stopDriver"/>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="RegisteredUserCanLogout"/>
+          <include name="RegisteredUserCanLogin"/>
           <include name="screenshotOnFailure"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- runner.TestRunner -->
+      </class> <!-- tests.UserRegisterationTestWithJavaFaker -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
