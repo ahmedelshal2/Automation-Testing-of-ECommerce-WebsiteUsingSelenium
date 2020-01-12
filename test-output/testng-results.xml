@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="nopcommerce Regression Suite" duration-ms="44144" started-at="2020-01-10T17:42:52Z" finished-at="2020-01-10T17:43:36Z">
+  <suite name="nopcommerce Regression Suite" duration-ms="107239" started-at="2020-01-12T11:23:01Z" finished-at="2020-01-12T11:24:48Z">
     <groups>
     </groups>
-    <test name="Chrome Regression Test" duration-ms="20364" started-at="2020-01-10T17:42:52Z" finished-at="2020-01-10T17:43:12Z">
+    <test name="Chrome Regression Test" duration-ms="68421" started-at="2020-01-12T11:23:01Z" finished-at="2020-01-12T11:24:09Z">
       <class name="tests.SearchProductPT">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="setUp" is-config="true" duration-ms="11730" started-at="2020-01-10T17:42:52Z" finished-at="2020-01-10T17:43:04Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="setUp" is-config="true" duration-ms="27587" started-at="2020-01-12T11:23:01Z" finished-at="2020-01-12T11:23:29Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UserCanSearchForProducts()[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="UserCanSearchForProducts" duration-ms="8069" started-at="2020-01-10T17:43:04Z" finished-at="2020-01-10T17:43:12Z">
+        <test-method status="PASS" signature="UserCanSearchForProducts()[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="UserCanSearchForProducts" duration-ms="40476" started-at="2020-01-12T11:23:29Z" finished-at="2020-01-12T11:24:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanSearchForProducts -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="screenshotOnFailure" is-config="true" duration-ms="2" started-at="2020-01-10T17:43:12Z" finished-at="2020-01-10T17:43:12Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2020-01-12T11:24:09Z" finished-at="2020-01-12T11:24:09Z">
           <params>
             <param index="0">
               <value>
@@ -33,15 +33,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="stopDriver" is-config="true" duration-ms="518" started-at="2020-01-10T17:43:12Z" finished-at="2020-01-10T17:43:12Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.SearchProductPT@e25b2fe]" name="stopDriver" is-config="true" duration-ms="306" started-at="2020-01-12T11:24:09Z" finished-at="2020-01-12T11:24:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
       </class> <!-- tests.SearchProductPT -->
     </test> <!-- Chrome Regression Test -->
-    <test name="Firefox Regression Test" duration-ms="44144" started-at="2020-01-10T17:42:52Z" finished-at="2020-01-10T17:43:36Z">
+    <test name="Firefox Regression Test" duration-ms="107239" started-at="2020-01-12T11:23:01Z" finished-at="2020-01-12T11:24:48Z">
       <class name="tests.AddProductToShoppingCartTestPT">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="setUp" is-config="true" duration-ms="18099" started-at="2020-01-10T17:42:52Z" finished-at="2020-01-10T17:43:10Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="setUp" is-config="true" duration-ms="55714" started-at="2020-01-12T11:23:01Z" finished-at="2020-01-12T11:23:57Z">
           <params>
             <param index="0">
               <value>
@@ -52,11 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UserCanSearchWithAutoSuggest()[pri:1, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="UserCanSearchWithAutoSuggest" duration-ms="8942" started-at="2020-01-10T17:43:10Z" finished-at="2020-01-10T17:43:19Z">
+        <test-method status="PASS" signature="UserCanSearchWithAutoSuggest()[pri:1, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="UserCanSearchWithAutoSuggest" duration-ms="22668" started-at="2020-01-12T11:23:57Z" finished-at="2020-01-12T11:24:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanSearchWithAutoSuggest -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2020-01-10T17:43:19Z" finished-at="2020-01-10T17:43:19Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-12T11:24:19Z" finished-at="2020-01-12T11:24:19Z">
           <params>
             <param index="0">
               <value>
@@ -67,11 +67,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="UserCanAddProductToShoppingCart()[pri:2, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="UserCanAddProductToShoppingCart" duration-ms="4736" started-at="2020-01-10T17:43:19Z" finished-at="2020-01-10T17:43:24Z">
+        <test-method status="PASS" signature="UserCanAddProductToShoppingCart()[pri:2, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="UserCanAddProductToShoppingCart" duration-ms="8550" started-at="2020-01-12T11:24:19Z" finished-at="2020-01-12T11:24:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanAddProductToShoppingCart -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="3" started-at="2020-01-10T17:43:24Z" finished-at="2020-01-10T17:43:24Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="1" started-at="2020-01-12T11:24:28Z" finished-at="2020-01-12T11:24:28Z">
           <params>
             <param index="0">
               <value>
@@ -82,11 +82,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="addQunatity()[pri:3, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="addQunatity" duration-ms="6997" started-at="2020-01-10T17:43:24Z" finished-at="2020-01-10T17:43:31Z">
+        <test-method status="PASS" signature="addQunatity()[pri:3, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="addQunatity" duration-ms="5761" started-at="2020-01-12T11:24:28Z" finished-at="2020-01-12T11:24:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addQunatity -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-10T17:43:31Z" finished-at="2020-01-10T17:43:31Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-12T11:24:34Z" finished-at="2020-01-12T11:24:34Z">
           <params>
             <param index="0">
               <value>
@@ -97,11 +97,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="UserCanRemoveProductFromCart()[pri:4, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="UserCanRemoveProductFromCart" duration-ms="4827" started-at="2020-01-10T17:43:31Z" finished-at="2020-01-10T17:43:36Z">
+        <test-method status="PASS" signature="UserCanRemoveProductFromCart()[pri:4, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="UserCanRemoveProductFromCart" duration-ms="4165" started-at="2020-01-12T11:24:34Z" finished-at="2020-01-12T11:24:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserCanRemoveProductFromCart -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="5" started-at="2020-01-10T17:43:36Z" finished-at="2020-01-10T17:43:36Z">
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-12T11:24:38Z" finished-at="2020-01-12T11:24:38Z">
           <params>
             <param index="0">
               <value>
@@ -112,7 +112,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="stopDriver" is-config="true" duration-ms="509" started-at="2020-01-10T17:43:36Z" finished-at="2020-01-10T17:43:36Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.AddProductToShoppingCartTestPT@59494225]" name="stopDriver" is-config="true" duration-ms="10358" started-at="2020-01-12T11:24:38Z" finished-at="2020-01-12T11:24:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->

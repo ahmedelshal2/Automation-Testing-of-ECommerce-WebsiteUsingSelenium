@@ -25,23 +25,27 @@ public class TestBase2 {
 
 
 	public static String BaseURL="https://demo.nopcommerce.com";
-	public static String sauceURL1="https://ahelshal2020:1fa5fca6-4f38-4241-9f21-1ab8e96314ae@ondemand.saucelabs.com:443/wd/hub";
+	//public static String sauceURL1="https://ahelshal2020:1fa5fca6-4f38-4241-9f21-1ab8e96314ae@ondemand.saucelabs.com:443/wd/hub";
 
 	protected ThreadLocal<RemoteWebDriver> driver=null;
 
 	@BeforeClass
 	@Parameters(value= {"browser"})
 
-	public void setUp(@Optional ("firefox") String browser) throws MalformedURLException
+	public void setUp(@Optional ("chrome") String browser) throws MalformedURLException
 	{
 		driver=new ThreadLocal<>();
 		DesiredCapabilities caps =new DesiredCapabilities();
 		caps.setCapability("browserName", browser);
 		//Selenium Grid Local
-	//	driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
+	//driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps));
+		
+		//run Zalenium and docker
+		driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), caps));
+		
 		
 		//Run on SauceLabs on cloud
-		driver.set(new RemoteWebDriver(new URL(sauceURL1), caps));
+		//driver.set(new RemoteWebDriver(new URL(sauceURL1), caps));
 		
 		getDriver().navigate().to(BaseURL);
 	}
