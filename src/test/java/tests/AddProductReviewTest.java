@@ -24,10 +24,10 @@ public class AddProductReviewTest extends TestBase {
 	SearchPage searchObject;
 	ProductDetailsPage detailsObject;
 	ProductReviewPage reviewObject;
-	String fname="ahkmed";
-	String lname="elshal";
-	String email="ahe4lshla222@gmail.com";
-	String pass="12345678";
+	String fname="ahskmed";
+	String lname="elsshal";
+	String email="ahe4lshla24422@gmail.com";
+	String pass="123445678";
 			
 	//1-User Registration
 	@Test(priority=1)

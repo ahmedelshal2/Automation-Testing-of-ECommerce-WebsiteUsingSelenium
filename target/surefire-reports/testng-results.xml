@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="nopcommerce Regression Suite" duration-ms="4473" started-at="2020-01-08T17:11:42Z" finished-at="2020-01-08T17:11:46Z">
+  <suite name="nopcommerce Regression Suite" duration-ms="94139" started-at="2020-01-13T13:28:01Z" finished-at="2020-01-13T13:29:35Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.SearchProductTest@548b7f67]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Regression Test" duration-ms="4473" started-at="2020-01-08T17:11:42Z" finished-at="2020-01-08T17:11:46Z">
-      <class name="tests.SearchProductTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.SearchProductTest@548b7f67]" name="startDriver" is-config="true" duration-ms="11510" started-at="2020-01-08T17:11:30Z" finished-at="2020-01-08T17:11:42Z">
+    <test name="Regression Test" duration-ms="94139" started-at="2020-01-13T13:28:01Z" finished-at="2020-01-13T13:29:35Z">
+      <class name="tests.RegisteredUserCheckoutProduct">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="startDriver" is-config="true" duration-ms="33573" started-at="2020-01-13T13:27:28Z" finished-at="2020-01-13T13:28:01Z">
           <params>
             <param index="0">
               <value>
@@ -21,34 +21,94 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.SearchProductTest@548b7f67]" name="setUpClass" is-config="true" duration-ms="411" started-at="2020-01-08T17:11:42Z" finished-at="2020-01-08T17:11:42Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="setUpClass" is-config="true" duration-ms="495" started-at="2020-01-13T13:28:01Z" finished-at="2020-01-13T13:28:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="UserCanSearchForProducts()[pri:0, instance:tests.SearchProductTest@548b7f67]" name="UserCanSearchForProducts" duration-ms="3995" started-at="2020-01-08T17:11:42Z" finished-at="2020-01-08T17:11:46Z">
+        <test-method status="PASS" signature="UserCanRegisterSuccessfully()[pri:1, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="UserCanRegisterSuccessfully" duration-ms="10984" started-at="2020-01-13T13:28:02Z" finished-at="2020-01-13T13:28:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserCanSearchForProducts -->
-        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductTest@548b7f67]" name="screenshotOnFailure" is-config="true" duration-ms="6" started-at="2020-01-08T17:11:46Z" finished-at="2020-01-08T17:11:46Z">
+        </test-method> <!-- UserCanRegisterSuccessfully -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-13T13:28:13Z" finished-at="2020-01-13T13:28:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserCanSearchForProducts status=SUCCESS method=SearchProductTest.UserCanSearchForProducts()[pri:0, instance:tests.SearchProductTest@548b7f67] output={null}]]]>
+                <![CDATA[[TestResult name=UserCanRegisterSuccessfully status=SUCCESS method=RegisteredUserCheckoutProduct.UserCanRegisterSuccessfully()[pri:1, instance:tests.RegisteredUserCheckoutProduct@568bf312] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.SearchProductTest@548b7f67]" name="tearDownClass" is-config="true" duration-ms="11" started-at="2020-01-08T17:11:46Z" finished-at="2020-01-08T17:11:46Z">
+        <test-method status="PASS" signature="UserCanSearchWithAutoSuggest()[pri:2, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="UserCanSearchWithAutoSuggest" duration-ms="13334" started-at="2020-01-13T13:28:13Z" finished-at="2020-01-13T13:28:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanSearchWithAutoSuggest -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-13T13:28:26Z" finished-at="2020-01-13T13:28:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanSearchWithAutoSuggest status=SUCCESS method=RegisteredUserCheckoutProduct.UserCanSearchWithAutoSuggest()[pri:2, instance:tests.RegisteredUserCheckoutProduct@568bf312] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="addQunatity()[pri:3, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="addQunatity" duration-ms="41843" started-at="2020-01-13T13:28:26Z" finished-at="2020-01-13T13:29:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addQunatity -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-13T13:29:08Z" finished-at="2020-01-13T13:29:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addQunatity status=SUCCESS method=RegisteredUserCheckoutProduct.addQunatity()[pri:3, instance:tests.RegisteredUserCheckoutProduct@568bf312] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="UserCanCheckoutProduct()[pri:4, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="UserCanCheckoutProduct" duration-ms="23898" started-at="2020-01-13T13:29:08Z" finished-at="2020-01-13T13:29:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserCanCheckoutProduct -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-13T13:29:32Z" finished-at="2020-01-13T13:29:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserCanCheckoutProduct status=SUCCESS method=RegisteredUserCheckoutProduct.UserCanCheckoutProduct()[pri:4, instance:tests.RegisteredUserCheckoutProduct@568bf312] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="RegisteredUserCanLogout()[pri:5, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="RegisteredUserCanLogout" duration-ms="3255" started-at="2020-01-13T13:29:32Z" finished-at="2020-01-13T13:29:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredUserCanLogout -->
+        <test-method status="PASS" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="screenshotOnFailure" is-config="true" duration-ms="0" started-at="2020-01-13T13:29:35Z" finished-at="2020-01-13T13:29:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegisteredUserCanLogout status=SUCCESS method=RegisteredUserCheckoutProduct.RegisteredUserCanLogout()[pri:5, instance:tests.RegisteredUserCheckoutProduct@568bf312] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="tearDownClass" is-config="true" duration-ms="15" started-at="2020-01-13T13:29:35Z" finished-at="2020-01-13T13:29:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.SearchProductTest@548b7f67]" name="stopDriver" is-config="true" duration-ms="0" started-at="2020-01-08T17:11:46Z" finished-at="2020-01-08T17:11:46Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.RegisteredUserCheckoutProduct@568bf312]" name="stopDriver" is-config="true" duration-ms="0" started-at="2020-01-13T13:29:36Z" finished-at="2020-01-13T13:29:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
-      </class> <!-- tests.SearchProductTest -->
+      </class> <!-- tests.RegisteredUserCheckoutProduct -->
     </test> <!-- Regression Test -->
   </suite> <!-- nopcommerce Regression Suite -->
 </testng-results>
