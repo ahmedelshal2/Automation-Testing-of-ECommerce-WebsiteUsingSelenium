@@ -29,16 +29,16 @@ public class RegisteredUserCheckoutProduct extends TestBase {
 	ShoppingCartPage cartPage;
 	CheckoutPage checkoutpage;
 	OrderDetailsPage orderObject;
-	String firstNName="ahmed";
-	String LastNName="elshal";
-	String emaill="aw545edf@gmail.com";
-	String Passwordd="123456";
+	String firstNName="ajlmed";
+	String LastNName="pe4shal";
+	String emaill="ahp45p7df@gmail.com";
+	String Passwordd="124443456";
 	String productName="Apple MacBook Pro 13-inch";
 	String country="Egypt";
 	String City="fowa";
 	String address="desouk";
 	String zipCode="46233";
-	String PhoneNumber="123666654";
+	String PhoneNumber="12346w66654";
 
 	@Test(priority=1)
 	public void UserCanRegisterSuccessfully()

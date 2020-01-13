@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,10 +11,14 @@ public class ContactUsTest extends TestBase {
 	
 	HomePage home;
 	ContactUsPage contactpage;
-	String fullNamee="Ahmed Morshedy";
-	String emaill="ali455@gmail.com";
+	String fullNamee="AhmdlMorJshedy";
+	String emaill="al4i4j4d55@gmail.com";
 	String enquiryy="hello admin please help me";
 	@Test
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Contact US Test Case")
+	@Link(name="JIRA Ticket", url = "https://google.com")
+
 	public void UsercanuseContactUs()
 	{
 		home=new HomePage(driver);

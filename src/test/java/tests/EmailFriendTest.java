@@ -18,10 +18,10 @@ public class EmailFriendTest extends TestBase {
 	SearchPage searchObject;
 	ProductDetailsPage detailsObject;
 	EmailPage emailObject;
-	String fname="ahmed";
-	String lname="elshal";
-	String email="ro56ro1119@gmail.com";
-	String pass="1234567";
+	String fname="ahfmed";
+	String lname="elsshal";
+	String email="ro5e776ro1119@gmail.com";
+	String pass="1234dd567";
 			
 
 	//1-User Registration
@@ -60,7 +60,7 @@ public class EmailFriendTest extends TestBase {
 		detailsObject=new ProductDetailsPage(driver);
 		detailsObject.openSendEmail();
 		emailObject=new EmailPage(driver);
-		emailObject.SendEmailToFriend("roby1203@test.com", "i have product very good");
+		emailObject.SendEmailToFriend("roby71203@test.com", "i have product very good");
 		Assert.assertTrue(emailObject.messageNotification.getText().contains("Your message has been sent"));
 	}
 
