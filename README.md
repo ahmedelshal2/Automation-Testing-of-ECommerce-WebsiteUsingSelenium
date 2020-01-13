@@ -9,6 +9,7 @@
 - Sauce Labs
 - Zalenium 
 - Docker
+- Allure Test Report
 # Integrated Development Environment 
 - Eclipse IDEA
 - IntelliJ IDEA
