@@ -3,9 +3,9 @@
 	<parameter name="browser" value="firefox"></parameter>
 	<test name="Regression Test" preserve-order="false">
 		<classes>
-			<class name="tests.SearchProductTest" />
+			<!--<class name="tests.SearchProductTest" /> -->
 			<class name="tests.AddProductToShoppingCartTest" />
-			<class name="tests.UserRegisterationTestWithJavaFaker" />
+			<!--<class name="tests.UserRegisterationTestWithJavaFaker" />-->
 		</classes>
 	</test>
 </suite> 
