@@ -11,6 +11,7 @@
 - Docker
 - Allure Test Report
 - Jenkins Pipeline
+-  Slack Integration into Jenkins File
 # Integrated Development Environment 
 - Eclipse IDEA
 - IntelliJ IDEA
