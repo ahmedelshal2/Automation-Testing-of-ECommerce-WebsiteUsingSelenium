@@ -4,12 +4,8 @@
 	<test name="Regression Test" preserve-order="false">
 		<classes>
 			<class name="tests.SearchProductTest" />
-			<class name="tests.AddProductReviewTest" />
-			<class name="tests.AddProductToCompareTest" />
 			<class name="tests.AddProductToShoppingCartTest" />
-			<class name="tests.AddProductToWishListTest" />
 			<class name="tests.UserRegisterationTestWithJavaFaker" />
-			<class name="tests.RegisteredUserCheckoutProduct" />
 		</classes>
 	</test>
 </suite> 
