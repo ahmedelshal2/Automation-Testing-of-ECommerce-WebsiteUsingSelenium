@@ -10,6 +10,7 @@
 - Zalenium 
 - Docker
 - Allure Test Report
+- Jenkins Pipeline
 # Integrated Development Environment 
 - Eclipse IDEA
 - IntelliJ IDEA
