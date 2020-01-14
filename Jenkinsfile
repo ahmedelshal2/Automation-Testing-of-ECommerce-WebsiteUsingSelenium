@@ -1,25 +1,51 @@
-node {
-   def mvnHome
-   stage('Checkout') { // for display purposes
-      // Get some code from a GitHub repository
+pipeline {
+    try{
+    notifyBuild('STARTED')
+   stage('Preparation') {
       git 'https://github.com/ahelshal/Automation-Testing-of-ECommerce-WebsiteUsingSelenium.git'
-      // Get the Maven tool.
-      // ** NOTE: This 'M3' Maven tool must be configured
-      // **       in the global configuration.
+
       mvnHome = tool 'MAVEN_HOME'
    }
    stage('Build') {
-      // Run the maven build
-      withEnv(["MVN_HOME=$mvnHome"]) {
-         if (isUnix()) {
-            sh '"$MVN_HOME/bin/mvn" test -Pregression'
-         } else {
-            bat(/"%MVN_HOME%\bin\mvn" test -Pregression/)
-         }
-      }
+         bat(/"${mvnHome}\bin\mvn" test -Pregression/)
    }
    stage('Results') {
       junit '**/target/surefire-reports/TEST-*.xml'
-      archiveArtifacts 'target/*.jar'
+      archive 'target/*.jar'
    }
+    } catch (e) {
+    // If there was an exception thrown, the build failed
+    currentBuild.result = "FAILED"
+    throw e
+
+  } finally {
+    // Success or failure, always send notifications
+    notifyBuild(currentBuild.result)
+  }
+}
+
+def notifyBuild(String buildStatus = 'STARTED') {
+  // build status of null means successful
+  buildStatus =  buildStatus ?: 'SUCCESSFUL'
+
+  // Default values
+  def colorName = 'RED'
+  def colorCode = '#FF0000'
+  def subject = "${buildStatus}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'"
+  def summary = "${subject} (${env.BUILD_URL})"
+
+  // Override default values based on build status
+  if (buildStatus == 'STARTED') {
+    color = 'YELLOW'
+    colorCode = '#FFFF00'
+  } else if (buildStatus == 'SUCCESSFUL') {
+    color = 'GREEN'
+    colorCode = '#00FF00'
+  } else {
+    color = 'RED'
+    colorCode = '#FF0000'
+  }
+
+  // Send notifications
+  slackSend (color: colorCode, message: summary)
 }
